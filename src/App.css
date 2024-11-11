@@ -40,3 +40,6 @@
 .read-the-docs {
   color: #888;
 }
+.react-tabs__tab--selected {
+  color: #bb8506;
+}
