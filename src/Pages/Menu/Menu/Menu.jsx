@@ -28,14 +28,22 @@ const Menu = () => {
       ></SectionTitle>
       <div className="flex flex-col gap-40">
         <MenuCategory item={offered}></MenuCategory>
-        <Cover img={desserts1} heading="Desserts"></Cover>
-        <MenuCategory item={desserts}></MenuCategory>
-        <Cover img={pizza1} heading="pizza"></Cover>
-        <MenuCategory item={pizza}></MenuCategory>
-        <Cover img={salads1} heading="salads"></Cover>
-        <MenuCategory item={salads}></MenuCategory>
-        <Cover img={soups1} heading="soups"></Cover>
-        <MenuCategory item={soups}></MenuCategory>
+
+        <MenuCategory
+          item={desserts}
+          img={desserts1}
+          title={"dessert"}
+        ></MenuCategory>
+
+        <MenuCategory item={pizza} img={pizza1} title={"pizza"}></MenuCategory>
+
+        <MenuCategory
+          item={salads}
+          img={salads1}
+          title={"salad"}
+        ></MenuCategory>
+
+        <MenuCategory item={soups} img={soups1} title={"soup"}></MenuCategory>
       </div>
     </>
   );
