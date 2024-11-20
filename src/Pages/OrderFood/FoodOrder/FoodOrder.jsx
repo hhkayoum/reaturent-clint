@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -21,6 +22,9 @@ const FoodOrder = () => {
   const soups = menu.filter((item) => item.category === "soup");
   return (
     <>
+      <Helmet>
+        <title>Bistro Boss | Order Food</title>
+      </Helmet>
       <Cover img={img} heading="Our Shop"></Cover>
       <Tabs
         selectedIndex={tabIndex}
